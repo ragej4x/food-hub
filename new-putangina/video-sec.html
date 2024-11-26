@@ -1,0 +1,25 @@
+<main>
+    <!-- Video Grid -->
+    <section class="video-grid">
+      <div class="video-tile" onclick="playVideo('adobong_manok.mp4', 'Adobong Manok')">
+        <img src="../images/adobong_manok_image.jpg" alt="Adobong Manok">
+        <p class="video-title">Adobong Manok</p>
+      </div>
+  
+      <div class="video-tile" onclick="playVideo('bold_ni_wally.mp4', 'Bold ni Wally')">
+        <img src="../images/wally_image.jpg" alt="Bold ni Wally">
+        <p class="video-title">Bold ni Wally</p>
+      </div>
+    </section>
+  
+    <!-- Video Player Section -->
+    <section class="video-player hidden" id="video-player">
+      <button class="close-btn" onclick="closeVideo()">Close</button>
+      <video id="video" controls autoplay>
+        <source id="video-source" src="" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h2 id="video-title"></h2>
+    </section>
+  </main>
+  
